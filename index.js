@@ -52,7 +52,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+let year = '1999';
+let num = Number(year)
+console.log(num)
 
 
 /*
