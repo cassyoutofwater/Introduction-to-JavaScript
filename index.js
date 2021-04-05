@@ -19,7 +19,7 @@ Do the following:
 */
 const votingAge = 19;
 if (votingAge => 18)
-{console.log ("true")}
+{console.log ("true")};
 
 
 /*
@@ -33,11 +33,11 @@ Do the following:
    HINT: no function required
 */
 
-let variable1 = 15;
-let variable2 = 12;
-if (variable2 === 12)
-{variable1 = 9}
-console.log(variable1)
+let a = 15;
+let b = 12;
+if (b === 12)
+{a = b + 9}
+console.log(a);
 
 
 
@@ -54,7 +54,7 @@ Do the following:
 
 let year = '1999';
 let num = Number(year)
-console.log(num)
+console.log(num);
 
 
 /*
@@ -66,9 +66,13 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+let a = 2;
+let b = 4;
+
+function multiply(a,b)
+{return a * b}
+
+console.log(a*b) 
 
 
 
