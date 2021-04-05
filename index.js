@@ -86,9 +86,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
-}
+let age = 5;
+function dogYears(age)
+{return 7 * age;}
+
 
 
 
