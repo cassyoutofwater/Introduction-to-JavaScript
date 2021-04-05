@@ -17,7 +17,9 @@ Do the following:
 
    HINT: no function required
 */
-
+const votingAge = 19;
+if (votingAge => 18)
+{console.log ("true")}
 
 
 /*
@@ -31,7 +33,11 @@ Do the following:
    HINT: no function required
 */
 
-
+let variable1 = 15;
+let variable2 = 12;
+if (variable2 === 12)
+{variable1 = 9}
+console.log(variable1)
 
 
 
