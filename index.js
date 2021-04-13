@@ -86,9 +86,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-let age = 5;
 function dogYears(age)
-{return 7 * age;}
+{return age * 7}
+
+console.log(dogYears(5))
 
 
 
@@ -120,9 +121,33 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
-  }
+function hungryDog(age, weight) 
+{
+if (age => 1) 
+    {
+    if (weight <= 5) 
+    {return weight * .05}
+    if ((weight => 6) && (weight <= 10)) 
+    {return weight * .04}
+    if ((weight => 11) && (weight <= 15)) 
+    {return weight * .03}
+    if (weight > 15)
+    {return weight * .02}
+    }
+
+else
+
+    {if (age <= .333) 
+    {return weight * .1} 
+    if ( (age > .333 ) && (age <= .583))
+    {return weight * .05}
+    if ((age > .583) && (age < 1))
+    {return weight * .04}
+    }
+}
+
+
+     console.log(hungryDog(.333, 15))
 
 
 
@@ -145,9 +170,38 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
+let computer = Math.random();
+
+if (computer < 0.25) {
+  computer = "rock";
+} else if (computer > 0.5)
+  {computer = "paper";
+  } else computer = "scissors";
+
+console.log()
+
 function game(user, computer){
-    /*add your code here*/
+    if (user === computer) {
+      console.log("it's a tie!")
+      return "it's a tie!"
+    } else if (user === "scissors" && computer === "paper"){
+    console.log("you win")
+    return "you win"
+  } else if
+  (user === "rock" && computer === "scissors")   {
+    console.log("you win")
+    return "you win"
+  }
+  else if (user === "paper" && computer === "rock")   {
+    console.log ("you win")
+    return "you win"
+  }
+  else console.log("you lose!")
+return "you lose!"
+  
 }
+
+game("rock", computer)
   
   
 
